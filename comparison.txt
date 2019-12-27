@@ -1,0 +1,58 @@
+-eq --> is equal to if [ "$a" -ne "$b" ]
+-ne --> is not equal to
+-gt --> is greater than
+-ge --> is greaten than or equal to
+-lt --> is less than
+-le --> is less than or equal to
+--------------------------------------
+double parenthesis
+-------------------------------------
+(("$a" < "$b")) - less than
+Note : all operators will follow the same syntax
+eg. <=, >=, >, !=
+-------------------------
+compound comparison
+-a --> and (true or false)
+-o -- or (true or false)
+-------------------------------
+while [ $num -le 5 ]
+do
+ ...
+done
+---------------
+while true
+do
+ echo "press ctrl+c to exit"
+done
+-------------------------------
+#case syntax
+-------------------
+case <variable> in
+ <pattern1>)
+  ....
+  ;;
+ <pattern2>)
+  ...
+  ;;
+ *)
+  ...
+  ;;
+esac
+--------------------
+funname(){
+ ------ 
+}
+funname
+------------------------------
+function funname(){
+..........
+}
+funname
+
+-------------------------------
+function quotes()
+{
+ echo "quote of the day: "$1
+}
+quotes "hard work is key to success"
+
